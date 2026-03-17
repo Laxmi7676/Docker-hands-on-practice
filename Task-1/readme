@@ -1,0 +1,65 @@
+# Task – Install Docker and Docker Compose
+
+## Objective
+
+The Nautilus DevOps team wants to containerize applications.
+For testing, Docker and Docker Compose need to be installed on **App Server 3**, and the Docker service must be started.
+
+---
+
+## Task Requirements
+
+1. Install **docker-ce** and **docker-compose** packages on **App Server 3**.
+2. Start the **Docker service**.
+
+---
+
+## Steps to Perform
+
+### 1. Login to App Server 3
+
+```bash
+ssh banner@stapp03
+```
+
+### 2. Install Docker
+
+```bash
+sudo yum install -y docker-ce
+```
+
+### 3. Install Docker Compose
+
+```bash
+sudo yum install -y docker-compose
+```
+
+### 4. Start Docker Service
+
+```bash
+sudo systemctl start docker
+```
+
+### 5. Verify Docker Service
+
+```bash
+systemctl status docker
+```
+
+---
+
+## Screenshots
+
+### Question
+
+![Question](question.png)
+
+### Solution
+
+![Answer](answer.png)
+
+---
+
+## Result
+
+Docker and Docker Compose were successfully installed on **App Server 3**, and the Docker service was started successfully.
